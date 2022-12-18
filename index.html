@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<!-- Datos que describen el documento -->
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora RPN</title>
+    <meta name="author" content="Adriana Rodríguez Flórez, UO282798" />
+    <meta name="description" content="[PHP] Calculadora RPN (notación polaca inversa)" />
+    <meta name="keywords" content="php,calculadora,rpn,avanzada,notacion,polaca,inversa" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    
+ <!-- Incluir el código PHP que especifica la calculadora -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+</head>
+
+<body>
+
+        <h1>Simulador de calculadora RPN</h1>
+
+    <!-- Parte superior de la calculadora, contiene la pantalla donde estarán los números-->
+    <header>
+        <!-- Pantalla de la calculadora (solo se interactúa con los botones)-->
+        <form action='#' method='post' name='calculadorarpn'>
+            <label for="pantalla">··· RPN</label>
+                <textarea id="pantalla" name="pantalla" readonly disabled>
+                    3
+88
+                </textarea>
+        </form>
+    </header>
+
+    <!-- Grupos de botones -->
+    <main>
+        <form action="#" method='post' name='botonesrpn'>
+        <!-- 1a fila -->
+            <input type="submit" name="deg" value="DEG" /> <!-- Cambia unidades a grados, radianes o gradianes-->
+            <input type="submit" name = "hyp" value="HYP" /> <!-- Funcion hiperbolica -->
+            <input type="submit" name="sin" value="sin" /> <!-- Func. trigonométricas -->
+            <input type="submit" name="cos" value="cos" /> <!-- Según si es shift o hyp, es inversa y/o hiperbólica -->
+            <input type="submit" name="tan" value="tan" />
+
+        <!-- 2a fila -->
+            <input type="submit" name="x2" value="x^2" /> <!-- True: potencia de 2 / False: base 10-->
+            <input type="submit" name="xy" value="x^y" /> <!-- Potencia y en base x-->
+            <input type="submit" name="sqrt" value="√" /> <!-- Raíz cuadrada de lo mostrado en pantalla -->
+            <input type="submit" name="log" value="log" /> <!-- Logaritmo en base 10 del número en pantalla -->
+            <input type="submit" name="mod" value="Mod" /> <!-- Módulo entre 2 números-->
+
+        <!-- 3a fila -->
+            <input type="submit" name="ce" value="CE" /> <!-- Borra la última entrada en pantalla -->
+            <input type="submit" name="c" value="C" /> <!-- Borra la operación entera -->
+            <input type="submit" name="clearError" value="←" /> <!-- Borra el último caracter en pantalla y en la operación  -->
+            <input type="submit" name="inverse" value="↑" /> <!-- Transforma todas las funciones a su inversa, o no-->
+
+        <!-- 4a fila -->
+            <input type="submit" name="pi" value="π" />
+            <input type="submit" name="7" value="7" />
+            <input type="submit" name="8" value="8" />
+            <input type="submit" name="9" value="9" />
+            <input type="submit" name="div" value="÷" />
+
+        <!-- 5a fila -->
+            <input type="submit" name="fact" value="n!" />
+            <input type="submit" name="4" value="4" />
+            <input type="submit" name="5" value="5" />
+            <input type="submit" name="6" value="6" />
+            <input type="submit" name="x" value="x"/>
+
+        <!-- 6a fila -->
+            <input type="submit" name="cambiarSigno" value="±" /> <!-- Cambia el signo del número en pantalla -->
+            <input type="submit" name="1" value="1" />
+            <input type="submit" name="2" value="2" />
+            <input type="submit" name="3" value="3" />
+            <input type="submit" name="-" value="-" />
+
+        <!-- Ult fila -->
+            <input type="submit" name="enter" value="ENTER" /> <!-- Resultado de la operación entera -->
+            <input type="submit" name = "0" value="0" />
+            <input type="submit" name = "punto" value="." />
+            <input type="submit" name="+" value="+" />
+        </form>
+    </main>
+
+    <footer>
+        <p>Software y Estándares para la Web</p>
+        <p>Grado en Ingeniería Informática del Software (Universidad de Oviedo)</p>
+        <address>
+            <p>Contacto: 
+            <a href="mailto:UO282798@uniovi.es">Adriana Rodríguez Flórez (UO282798@uniovi.es)</a></p>
+        </address>
+    </footer>
+
+</body>
+
+</html>
