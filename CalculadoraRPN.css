@@ -1,0 +1,170 @@
+/****************************************
+    Adriana Rodríguez Flórez - UO282798 
+        Descripción de los estilos
+*****************************************/
+
+/* Especificidad: 001 */
+body { /* CENTRAR EL CONTENIDO */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(255, 255, 255);
+    color:#4c4949;
+}
+/* Especificidad: 001 */
+header {
+    background-color: rgb(36, 36, 36);
+    border-style: solid;
+    border-color: rgb(53, 53, 53);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 25em;
+    height: 8em;
+}
+/* Especificidad: 001 */
+header form {
+    width: 15.1em;
+    height: 8em;
+}
+/* Especificidad: 001*/
+textarea{
+    background-color: rgb(233, 231, 231);
+    color: #252424;
+    text-align: right;
+    font-size: 2em;
+    width: 15.1em;
+    height: 6em;
+    resize: none;
+}
+/* Especificidad: 001 */ /* CARCASA DE LA CALCULADORA */
+main {
+    background-color: rgb(193, 220, 229);; /* Warning: no hay color de primer plano ya que este se define en los respectivos botones */
+    border-style: solid;
+    border-color: #050404;
+    width: inherit;
+}
+/* Especificidad: 002 */ /* CARCASA DE LA CALCULADORA */
+main form {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em 5em;
+}
+/* Especificidad: 011 */
+label[for="pantalla"]{
+    padding: 0.5em;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+/* Especificidad: 011 */
+input[type='submit']{
+    background-color: rgb(193, 220, 229);
+    color:#050404;
+    border-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em;
+    margin: 0.2em;
+}
+/* Especificidad: 001 */
+footer {
+    padding: 1.5em;
+}
+/* Especificidad: 002 */
+footer p {
+    font-weight: bold;
+    font-size: 0.75em;
+    text-decoration: underline;
+    text-align: center;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="9"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="8"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="7"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="6"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="5"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="4"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="3"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="2"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="1"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="0"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="punto"]{
+    background-color: #f9f7f7;
+    font-weight: bold;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="enter"]{
+    background-color: #585858;
+    color: #f9f7f7;
+    font-weight: bold;
+    grid-column: span 2;
+}
+/* Especificidad: 021 */
+input[type='submit'][name="ce"]{
+    grid-column: span 2;
+    background-color: rgb(255, 249, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="c"]{
+    background-color: rgb(255, 249, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="←"]{
+    background-color: rgb(255, 249, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="+"]{
+    background-color: rgb(255, 211, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="x"]{
+    background-color: rgb(255, 211, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="-"]{
+    background-color: rgb(255, 211, 196);
+}
+/* Especificidad: 021 */
+input[type='submit'][name="÷"]{
+    background-color: rgb(255, 211, 196);
+}
